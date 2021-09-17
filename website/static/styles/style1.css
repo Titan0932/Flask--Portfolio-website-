@@ -1,0 +1,140 @@
+
+html{
+    height: 100%;
+   
+}
+
+body{
+    
+   
+
+    background-color:rgb(128, 78, 144);                      /*rgb(95, 160, 126) */
+    width:100%;
+    color:burlywood;
+    min-height:100%;
+    padding:0 0 0 0;
+    position: absolute;
+    margin-left: 0cm;
+    margin-top: 0cm;
+    margin-bottom: 0cm;
+    
+}
+
+body::-webkit-scrollbar{
+    width:0.35rem;
+}
+
+body::-webkit-scrollbar-track{
+    background: #27273d
+}
+body::-webkit-scrollbar-thumb{
+    background:#481b9d;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color:hsl(237, 18%, 24%);              /* rgb(47, 79, 61) or darkslategrey*/
+    width:100% ;
+    line-height: 7rem;
+    font-family: 'Signika', sans-serif;
+   
+    text-align: center;
+    font-size: 30px;
+    color: ivory;
+    position:relative;
+    scroll-padding-top: 1rem 0 0 0;
+    
+}
+
+.nav-item:hover{
+                    color:burlywood;
+                    filter: brightness(120%);
+}
+
+
+.nav-item:last-child {
+    margin-left: 16rem;
+  }
+
+
+a{color: inherit;
+font-style: inherit;
+text-decoration: none;
+}
+
+
+
+
+
+.imglink:hover{
+    
+    filter: brightness(70%);
+}
+
+.container2{
+            padding-top: 2cm;
+            margin-left: 4rem;
+            margin-right: 2rem;
+            margin-top: min(2rem);
+            
+            padding-bottom: 0cm;
+            
+            
+}
+
+.copyright{
+    
+    text-align: right;
+    
+ 
+}
+.putter{
+
+    width: 100%;
+    
+    line-height:2rem;
+    color: ivory;
+    
+    font-family: 'Signika', sans-serif;
+    position:absolute;
+    background:hsl(236, 24%, 27%);
+    bottom:0;
+    
+}
+.container3{
+            text-align: center;
+            margin: 4rem 7rem 2rem 7rem;
+            background: #eb596e;
+            padding-bottom: 2cm;
+            padding-top: 1cm;
+            font-family: 'Lora', serif;;
+}
+
+.container3 hr{
+    width:80%; 
+    background-color:#e12d48;
+    height: 2px;
+    
+}
+
+
+
+.outlook{
+    padding-top: 5rem;
+    padding-bottom:15rem;
+    
+}
+
+.messages{
+
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: red;
+    position:relative;
+    top:5rem;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+

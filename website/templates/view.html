@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title> User Logbook</title>
+    </head>
+
+    <body>
+
+        {% with messages=get_flashed_messages() %}
+            {% if messages %}
+                {% for msg in messages %}
+                    <p> {{msg}}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+
+        {% for item in values %}
+            <p>{{item._id}} : </p>
+            <p>{{item.uname}} : {{item.uemail}}</p>
+
+        {% endfor %}
+
+    </body>
+</html>

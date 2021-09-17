@@ -1,0 +1,46 @@
+
+{% extends "base_temp.html" %}
+
+
+{% block title %} test Home{% endblock %}
+
+{% block content %}
+<div class="container2">
+    <table width=100%  height="750"  cellpadding="10"  cellspacing="70" >
+        <tr>
+            <td><h1><font size="60">Hi :))</font>  </h1>
+                 <font size="5">
+                 I'm <b>Anjish! </b> I'm a 19 year-old fresh highschool graduate from Nepal who's restlessly aspiring to study computer science. Although it hasn't been long since I 
+                 started programming, I've begun to love it more and more as I indulge in it everday. From a clueless kid who didn't have the faintest idea of what he wanted in life,
+                 walking aimlessly in the dark, it's really astonishing to see how much I've grown in such a short amount of time, learning and thriving, the initially dark road becoming seemingly clearer and 
+                 brighter everyday.
+                 I enjoy watching anime, playing football and chess. 
+                 </font>
+         </td>
+             <td width="427"> <img src="{{ url_for('static', filename='/images/me.jpg')}}" align="right"> </td>
+        </tr>
+        <tr>
+         <td><h1><font size="60">About this Blog....</font>  </h1> </td>
+        </tr>
+        <tr>
+            <td>
+                 <font size="5"> 
+                     At this point, I'm currently learning web development and I could not be more excited to create this project. I thought that
+                     it would be a really fun idea to create a useful project that I can even use in the future. So, far I decided to create this blog to introduce myself, 
+                     showcase all the projects I've worked on(some games and visualizing programs) and all that I will be working on. It's exciting and this might really help me learn and implement what I've learnt so far! It might be really cool to look
+                     back at this in the future, check my progress, and maybe upgrade it even more, or perhaps create such blogs for other people as well. Now that's an IDEA!
+                 </font>
+         </td>
+         <td>
+             <img src="{{ url_for('static', filename='/images/idea.png')}}">
+         </td>
+        </tr>
+    </table>
+
+{% endblock %}
+
+</div>
+
+
+
+

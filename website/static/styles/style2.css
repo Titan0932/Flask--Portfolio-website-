@@ -1,0 +1,65 @@
+.wrapper{
+    font-size:20px;
+    margin: 4rem 7rem 4rem 7rem;
+}
+
+.container4 {
+            background:rgb(39, 151, 157);
+            padding:4rem 4rem 4rem 4rem;
+}
+
+
+.container5{
+    background-color:rgb(56, 31, 170) ;
+    padding: 4rem 4rem 4rem 5rem;
+}
+
+.container6{
+    background: rgb(16, 154, 201);
+    padding: 4rem 4rem 4rem 5rem;
+    overflow: auto;  
+}
+
+.see{   
+    background-image: url("../../static/images/book.png");
+    width: 200px;
+    line-height: 29px;
+    color: rgb(206, 79, 29);
+    margin-left: 29%;
+    padding: 2rem 2rem 2rem 2rem;  
+   
+}
+
+.alevels{
+    background-image: url("../../static/images/book.png");
+    width: 200px;
+    line-height: 24px;
+    color: rgb(206, 79, 29);
+    
+    margin-left: 50%;
+    
+    padding: 2rem 2rem 2rem 2rem;   
+     
+}
+
+
+.container7{
+            background: mediumpurple;
+            padding: 4rem 4rem 4rem 5rem;
+            
+}
+.container7 span{
+        display: inline-block;
+        padding: 30px;
+        line-height: 110%;
+    
+        -moz-border-radius: 50%;
+        border-radius: 60%;
+    
+        background-color:tomato;
+        
+        text-align: center;
+        
+    
+}
+

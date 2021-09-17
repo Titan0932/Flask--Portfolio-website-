@@ -1,0 +1,145 @@
+
+<html>
+<head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
+    
+
+    
+    <title>{% block title %}{% endblock %}</title>
+
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='/styles/style1.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/styles/style2.css') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+    
+    
+</head>
+
+
+
+
+<body>  
+
+    
+  <div class="pos-f-t">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="navbar">
+        
+        <a class="nav-item nav-link" id="home"  href="/home">| <img src="{{ url_for('static', filename='/images/home_i.png')}}"> Home</a> <a class="nav-item nav-link" id="projets" href="/projects/">| <img src="{{ url_for('static', filename='/images/project_i.png')}}"> Projects &nbsp;&nbsp;&nbsp;</a> 
+        <a class="nav-item nav-link" id="contact" href="/contact/"> | <img src="{{ url_for('static', filename='/images/contacts_i.png')}}"> Contact </a>
+         <a class="nav-item nav-link" id="resume" href="/resume/">| <img src="{{ url_for('static', filename='/images/resume_i.png')}}"> Resume </a> 
+         <a class="nav-item nav-link" id="logout" href="/logout"> | <img src="{{ url_for('static', filename='/images/logout_i.png')}}"> Log Out </a>
+        
+      </div>
+    </div>
+    <nav class="navbar navbar-dark ">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+  </div>
+   
+              
+    
+
+           
+        
+    
+   
+    
+        
+        
+    <div class="messages">
+        <p>
+        {% with messages=get_flashed_messages() %}
+            {% if messages %}
+                {%for msg in messages %}
+                  {{msg}}
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        </p>
+        </div>
+
+    {% block content %}
+    
+    {% endblock %}
+     
+
+    
+<br>
+<br> 
+
+
+    <div class="putter">
+        <p class="copyright"> <font size="3" > Made by Anjish Pradhananga © &nbsp; </font> </p>
+ 
+
+    </div>
+
+
+    
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>
+
+
+
+
+<!--
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+       <div class="collapse navbar-collapse" id="navbar">
+         <div class="navbar-nav">
+            <a class="nav-item nav-link" id="home"  href="/home">| <img src="{{ url_for('static', filename='/images/home_i.png')}}"> Home &nbsp;&nbsp;&nbsp; </a>
+           <a class="nav-item nav-link" id="projets" href="/projects/">| <img src="{{ url_for('static', filename='/images/project_i.png')}}"> Projects &nbsp;&nbsp;&nbsp;</a> 
+            <a class="nav-item nav-link" id="contact" href="/contact/"> | <img src="{{ url_for('static', filename='/images/contacts_i.png')}}"> Contact &nbsp;&nbsp;&nbsp;</a>
+            <a class="nav-item nav-link" id="resume" href="/resume/">| <img src="{{ url_for('static', filename='/images/resume_i.png')}}"> Resume </a> 
+            <a class="nav-item nav-link" id="logout" href="/logout"> | <img src="{{ url_for('static', filename='/images/logout_i.png')}}"> Log Out </a>
+          </div>
+        </div>
+       <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+         data-target="#navbar"
+        >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    
+    </nav>
+
+-->

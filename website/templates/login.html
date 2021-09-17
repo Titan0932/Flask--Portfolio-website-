@@ -1,0 +1,57 @@
+
+
+{% extends 'base_temp.html' %}
+
+{% block title %} Log In {% endblock %} 
+
+
+
+{% block content %}
+
+
+
+<div class="container2">
+<table cellspacing="15" cellpadding="10" align="center" colspan=2 >
+    <tr>
+       <td rowspan="1"> <h1>Login Form </h1></td>
+        
+    </tr>
+<form name="Login Details" action="#" method="POST">
+<tr>
+    <td><b>Username* :</b> </td>
+    <td> <input type="text" name="Username"></td>
+</tr>
+<tr>
+    <td><b>Password :* :</b> </td>
+    <td> <input type="password" name="Password"></td>
+</tr>
+<tr>
+    <td><b>E-mail* :</b> </td>
+    <td> <input type="email" name="Email"></td>
+</tr>
+
+
+
+
+<tr>
+    <td></td>
+    <td><input type="submit" value= "Submit"></td>
+</tr>
+<tr>
+    <td> </td>
+    <td></td>
+</tr>
+
+
+</form>
+</table>
+<br>
+<br>
+</div>
+
+{% endblock %}
+
+
+
+
+
